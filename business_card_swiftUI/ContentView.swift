@@ -13,10 +13,9 @@ struct ContentView: View {
         ZStack {
             Color("BrandGreen").edgesIgnoringSafeArea(.all)
             VStack {
-                Text("Sebastian K. Malm")
-                    .font(.largeTitle)
-                Text("iOS Developer")
-                    .padding(.vertical)
+                MainText(text: "Sebastian Malm").padding(.bottom).font(.largeTitle)
+                MainText(text: "iOS Developer")
+                    .padding(.bottom)
                 InfoCapsule(symbolName: "phone.fill", text: "(555) 555-5555")
                     .padding(.bottom)
                 InfoCapsule(symbolName: "envelope.fill", text: "email@email.com")
@@ -35,8 +34,8 @@ struct ContentView_Previews: PreviewProvider {
 
 struct InfoCapsule: View {
     
-    var symbolName: String
-    var text: String
+    let symbolName: String
+    let text: String
     
     var body: some View {
         ZStack {
@@ -47,5 +46,14 @@ struct InfoCapsule: View {
             }
         }
         
+    }
+}
+
+struct MainText: View {
+    
+    let text: String
+    
+    var body: some View {
+        Text(text).foregroundColor(Color.white)
     }
 }
