@@ -56,12 +56,11 @@
 		9E0F9D50244527C8002EC364 /* business_card_swiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				9E0F9D51244527C8002EC364 /* AppDelegate.swift */,
-				9E0F9D53244527C8002EC364 /* SceneDelegate.swift */,
 				9E0F9D55244527C8002EC364 /* ContentView.swift */,
 				9E0F9D57244527CC002EC364 /* Assets.xcassets */,
 				9E0F9D5C244527CC002EC364 /* LaunchScreen.storyboard */,
 				9E0F9D5F244527CC002EC364 /* Info.plist */,
+				9E0F9D6524452B08002EC364 /* Supporting Files */,
 				9E0F9D59244527CC002EC364 /* Preview Content */,
 			);
 			path = business_card_swiftUI;
@@ -73,6 +72,15 @@
 				9E0F9D5A244527CC002EC364 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9E0F9D6524452B08002EC364 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E0F9D51244527C8002EC364 /* AppDelegate.swift */,
+				9E0F9D53244527C8002EC364 /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
