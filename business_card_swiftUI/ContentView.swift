@@ -24,7 +24,7 @@ struct ContentView: View {
                 }
                 MainText(text: "Sebastian Malm")
                     .padding(.bottom)
-                    .font(.custom("Pacifico", size: 50.0))
+                    .font(.custom("Pacifico-Regular", size: 50.0))
                 MainText(text: "iOS Developer")
                     .font(.headline)
                     .padding(.bottom)
