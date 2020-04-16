@@ -13,14 +13,12 @@ struct ContentView: View {
         ZStack {
             Color("BrandGreen").edgesIgnoringSafeArea(.all)
             VStack {
-                ZStack {
-                    Image("seb")
-                        .resizable()
-                        .frame(width: 200, height: 200)
-                        .clipShape(Circle())
-                        .overlay(Circle()
-                            .stroke(Color.white, lineWidth: 5.0))
-                }
+                Image("seb")
+                    .resizable()
+                    .frame(width: 200, height: 200)
+                    .clipShape(Circle())
+                    .overlay(Circle()
+                        .stroke(Color.white, lineWidth: 5.0))
                 MainText(text: "Sebastian Malm")
                     .padding(.bottom)
                     .font(.custom("Pacifico-Regular", size: 50.0))
