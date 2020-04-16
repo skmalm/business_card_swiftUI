@@ -13,6 +13,7 @@
 		9E0F9D58244527CC002EC364 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E0F9D57244527CC002EC364 /* Assets.xcassets */; };
 		9E0F9D5B244527CC002EC364 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E0F9D5A244527CC002EC364 /* Preview Assets.xcassets */; };
 		9E0F9D5E244527CC002EC364 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E0F9D5C244527CC002EC364 /* LaunchScreen.storyboard */; };
+		9E24C7EE2448033C0094146F /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E24C7ED2448033C0094146F /* Pacifico-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9E0F9D5A244527CC002EC364 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9E0F9D5D244527CC002EC364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E0F9D5F244527CC002EC364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E24C7ED2448033C0094146F /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				9E0F9D57244527CC002EC364 /* Assets.xcassets */,
 				9E0F9D5C244527CC002EC364 /* LaunchScreen.storyboard */,
 				9E0F9D5F244527CC002EC364 /* Info.plist */,
+				9E24C7EC2448032C0094146F /* Fonts */,
 				9E0F9D6524452B08002EC364 /* Supporting Files */,
 				9E0F9D59244527CC002EC364 /* Preview Content */,
 			);
@@ -81,6 +84,14 @@
 				9E0F9D53244527C8002EC364 /* SceneDelegate.swift */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9E24C7EC2448032C0094146F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9E24C7ED2448033C0094146F /* Pacifico-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E0F9D5E244527CC002EC364 /* LaunchScreen.storyboard in Resources */,
+				9E24C7EE2448033C0094146F /* Pacifico-Regular.ttf in Resources */,
 				9E0F9D5B244527CC002EC364 /* Preview Assets.xcassets in Resources */,
 				9E0F9D58244527CC002EC364 /* Assets.xcassets in Resources */,
 			);
