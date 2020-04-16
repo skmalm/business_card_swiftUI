@@ -19,7 +19,7 @@ struct ContentView: View {
                         .frame(width: 200, height: 200)
                         .clipShape(Circle())
                         .overlay(Circle()
-                            .strokeBorder(Color.white, lineWidth: 4.0))
+                            .stroke(Color.white, lineWidth: 5.0))
                 }
                 MainText(text: "Sebastian Malm")
                     .padding(.bottom)
@@ -70,3 +70,4 @@ struct MainText: View {
         Text(text).foregroundColor(Color.white)
     }
 }
+
