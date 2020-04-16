@@ -20,15 +20,12 @@ struct ContentView: View {
                     .overlay(Circle()
                         .stroke(Color.white, lineWidth: 5.0))
                 MainText(text: "Sebastian Malm")
-                    .padding(.bottom)
                     .font(.custom("Pacifico-Regular", size: 50.0))
                 MainText(text: "iOS Developer")
                     .font(.headline)
-                    .padding(.bottom)
+                Divider()
                 InfoCapsule(symbolName: "phone.fill", text: "(555) 555-5555")
-                    .padding(.vertical)
                 InfoCapsule(symbolName: "envelope.fill", text: "email@email.com")
-                    .padding(.top)
             }
         }
         
@@ -48,13 +45,13 @@ struct InfoCapsule: View {
     
     var body: some View {
         ZStack {
-            Capsule().fill(Color.white)
+            Capsule().foregroundColor(Color.white)
                 .frame(width: 350, height: 45)
-            HStack {
-                Image(systemName: symbolName)
-                    .foregroundColor(Color("BrandGreen"))
-                Text(text)
-            }
+                .overlay(HStack {
+                    Image(systemName: symbolName)
+                        .foregroundColor(Color("BrandGreen"))
+                    Text(text)
+                })
         }
         
     }
