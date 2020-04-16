@@ -13,7 +13,18 @@ struct ContentView: View {
         ZStack {
             Color("BrandGreen").edgesIgnoringSafeArea(.all)
             VStack {
-                MainText(text: "Sebastian Malm").padding(.bottom).font(.largeTitle)
+                ZStack {
+                    Image("seb")
+                        .resizable()
+                        .frame(width: 200, height: 200)
+                        .clipShape(Circle())
+                    Circle()
+                        .strokeBorder(Color.white, lineWidth: 4.0)
+                        .frame(width: 200, height: 200)
+                }
+                MainText(text: "Sebastian Malm")
+                    .padding(.bottom)
+                    .font(.largeTitle)
                 MainText(text: "iOS Developer")
                     .padding(.bottom)
                 InfoCapsule(symbolName: "phone.fill", text: "(555) 555-5555")
