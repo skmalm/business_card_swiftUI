@@ -18,9 +18,8 @@ struct ContentView: View {
                         .resizable()
                         .frame(width: 200, height: 200)
                         .clipShape(Circle())
-                    Circle()
-                        .strokeBorder(Color.white, lineWidth: 4.0)
-                        .frame(width: 200, height: 200)
+                        .overlay(Circle()
+                            .strokeBorder(Color.white, lineWidth: 4.0))
                 }
                 MainText(text: "Sebastian Malm")
                     .padding(.bottom)
