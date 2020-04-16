@@ -15,12 +15,12 @@ struct ContentView: View {
             VStack {
                 Image("seb")
                     .resizable()
-                    .frame(width: 200, height: 200)
+                    .frame(width: UIConstants.photoWidth, height: UIConstants.photoHeight)
                     .clipShape(Circle())
                     .overlay(Circle()
-                        .stroke(Color.white, lineWidth: 5.0))
+                        .stroke(Color.white, lineWidth: UIConstants.circleBorderWidth))
                 MainText(text: "Sebastian Malm")
-                    .font(.custom("Pacifico-Regular", size: 50.0))
+                    .font(.custom("Pacifico-Regular", size: UIConstants.nameTextSize))
                 MainText(text: "iOS Developer")
                     .font(.headline)
                 Divider()
@@ -46,14 +46,13 @@ struct InfoCapsule: View {
     var body: some View {
         ZStack {
             Capsule().fill(Color.white)
-                .frame(width: 350, height: 45)
+                .frame(width: UIConstants.capsuleWidth, height: UIConstants.capsuleHeight)
                 .overlay(HStack {
                     Image(systemName: symbolName)
                         .foregroundColor(Color("BrandGreen"))
                     Text(text)
                 })
         }
-        
     }
 }
 
@@ -66,3 +65,11 @@ struct MainText: View {
     }
 }
 
+private struct UIConstants {
+    static let photoWidth: CGFloat = 200
+    static let photoHeight: CGFloat = 200
+    static let circleBorderWidth: CGFloat = 5
+    static let nameTextSize: CGFloat = 50
+    static let capsuleWidth: CGFloat = 350
+    static let capsuleHeight: CGFloat = 45
+}
