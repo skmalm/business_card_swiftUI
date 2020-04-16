@@ -29,7 +29,7 @@ struct ContentView: View {
                     .font(.headline)
                     .padding(.bottom)
                 InfoCapsule(symbolName: "phone.fill", text: "(555) 555-5555")
-                    .padding(.bottom)
+                    .padding(.vertical)
                 InfoCapsule(symbolName: "envelope.fill", text: "email@email.com")
                     .padding(.top)
             }
