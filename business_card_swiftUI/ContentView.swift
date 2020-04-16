@@ -24,8 +24,9 @@ struct ContentView: View {
                 }
                 MainText(text: "Sebastian Malm")
                     .padding(.bottom)
-                    .font(.largeTitle)
+                    .font(.custom("SignPainter", size: 50.0))
                 MainText(text: "iOS Developer")
+                    .font(.headline)
                     .padding(.bottom)
                 InfoCapsule(symbolName: "phone.fill", text: "(555) 555-5555")
                     .padding(.bottom)
@@ -50,9 +51,11 @@ struct InfoCapsule: View {
     
     var body: some View {
         ZStack {
-            Capsule().fill(Color.white).frame(height: 50)
+            Capsule().fill(Color.white)
+                .frame(width: 350, height: 45)
             HStack {
-                Image(systemName: symbolName).foregroundColor(Color("BrandGreen"))
+                Image(systemName: symbolName)
+                    .foregroundColor(Color("BrandGreen"))
                 Text(text)
             }
         }
