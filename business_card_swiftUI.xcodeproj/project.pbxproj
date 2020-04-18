@@ -14,6 +14,7 @@
 		9E0F9D5B244527CC002EC364 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E0F9D5A244527CC002EC364 /* Preview Assets.xcassets */; };
 		9E0F9D5E244527CC002EC364 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E0F9D5C244527CC002EC364 /* LaunchScreen.storyboard */; };
 		9E24C7EE2448033C0094146F /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E24C7ED2448033C0094146F /* Pacifico-Regular.ttf */; };
+		9EB8C8B7244B69FC007998E6 /* InfoCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB8C8B6244B69FC007998E6 /* InfoCapsule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		9E0F9D5D244527CC002EC364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E0F9D5F244527CC002EC364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E24C7ED2448033C0094146F /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
+		9EB8C8B6244B69FC007998E6 /* InfoCapsule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCapsule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				9E0F9D55244527C8002EC364 /* ContentView.swift */,
+				9EB8C8B6244B69FC007998E6 /* InfoCapsule.swift */,
 				9E0F9D57244527CC002EC364 /* Assets.xcassets */,
 				9E0F9D5C244527CC002EC364 /* LaunchScreen.storyboard */,
 				9E0F9D5F244527CC002EC364 /* Info.plist */,
@@ -167,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E0F9D52244527C8002EC364 /* AppDelegate.swift in Sources */,
+				9EB8C8B7244B69FC007998E6 /* InfoCapsule.swift in Sources */,
 				9E0F9D54244527C8002EC364 /* SceneDelegate.swift in Sources */,
 				9E0F9D56244527C8002EC364 /* ContentView.swift in Sources */,
 			);

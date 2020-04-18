@@ -42,24 +42,6 @@ struct ContentView_Previews: PreviewProvider {
 
 // MARK: - Custom Subviews
 
-struct InfoCapsule: View {
-    
-    let symbolName: String
-    let text: String
-    
-    var body: some View {
-        ZStack {
-            Capsule().fill(Color.white)
-                .frame(width: UIK.capsuleWidth, height: UIK.capsuleHeight)
-                .overlay(HStack {
-                    Image(systemName: symbolName)
-                        .foregroundColor(Color("BrandGreen"))
-                    Text(text)
-                })
-        }
-    }
-}
-
 struct MainText: View {
     
     let text: String
@@ -76,6 +58,5 @@ private struct UIK {
     static let photoHeight: CGFloat = 200
     static let circleBorderWidth: CGFloat = 5
     static let nameTextSize: CGFloat = 50
-    static let capsuleWidth: CGFloat = 350
-    static let capsuleHeight: CGFloat = 45
+
 }
