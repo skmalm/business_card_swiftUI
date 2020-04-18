@@ -15,12 +15,12 @@ struct ContentView: View {
             VStack {
                 Image("seb")
                     .resizable()
-                    .frame(width: UIConstants.photoWidth, height: UIConstants.photoHeight)
+                    .frame(width: UIK.photoWidth, height: UIK.photoHeight)
                     .clipShape(Circle())
                     .overlay(Circle()
-                        .stroke(Color.white, lineWidth: UIConstants.circleBorderWidth))
+                        .stroke(Color.white, lineWidth: UIK.circleBorderWidth))
                 MainText(text: "Sebastian Malm")
-                    .font(.custom("Pacifico-Regular", size: UIConstants.nameTextSize))
+                    .font(.custom("Pacifico-Regular", size: UIK.nameTextSize))
                 MainText(text: "iOS Developer")
                     .font(.headline)
                 Divider()
@@ -38,6 +38,8 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
+// MARK: - Custom Subviews
+
 struct InfoCapsule: View {
     
     let symbolName: String
@@ -46,7 +48,7 @@ struct InfoCapsule: View {
     var body: some View {
         ZStack {
             Capsule().fill(Color.white)
-                .frame(width: UIConstants.capsuleWidth, height: UIConstants.capsuleHeight)
+                .frame(width: UIK.capsuleWidth, height: UIK.capsuleHeight)
                 .overlay(HStack {
                     Image(systemName: symbolName)
                         .foregroundColor(Color("BrandGreen"))
@@ -65,7 +67,9 @@ struct MainText: View {
     }
 }
 
-private struct UIConstants {
+// MARK: - UI Constants
+
+private struct UIK {
     static let photoWidth: CGFloat = 200
     static let photoHeight: CGFloat = 200
     static let circleBorderWidth: CGFloat = 5
