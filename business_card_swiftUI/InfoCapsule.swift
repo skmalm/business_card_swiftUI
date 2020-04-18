@@ -15,7 +15,7 @@ struct InfoCapsule: View {
     
     var body: some View {
         ZStack {
-            Capsule().fill(Color.white)
+            Capsule().fill(Color("CapsuleFill"))
                 .frame(width: InfoCapsuleUIK.capsuleWidth, height: InfoCapsuleUIK.capsuleHeight)
                 .overlay(HStack {
                     Image(systemName: symbolName)
